@@ -1,75 +1,51 @@
-# React + TypeScript + Vite
+# Enterprise Storybook Design System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An enterprise-focused design system built with **React, TypeScript, Vite, and Storybook**.
 
-Currently, two official plugins are available:
+The project demonstrates a structured design-to-development workflow connecting:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Figma → Storybook → CMS / Adobe Experience Manager → Digital Experience**
 
-## React Compiler
+## Live Storybook
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+[View the live Enterprise Storybook](https://enterprise-storybook-design-system.vercel.app)
 
-## Expanding the ESLint configuration
+## Project Purpose
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This project demonstrates how an enterprise design system can:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Create consistent UI experiences across products and websites
+- Document reusable component states and variants
+- Improve designer–developer collaboration
+- Support accessibility and responsive validation
+- Map coded components to CMS / AEM authoring fields
+- Establish scalable component governance
+- Reduce duplicate UI implementation
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Design-System Structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```text
+01 Introduction
+├── Overview
+├── Design Principles
+├── Figma → Storybook → AEM
+└── Governance
 
-```
+02 Foundations
+├── Design Tokens
+├── Color
+├── Typography
+├── Spacing
+├── Radius
+└── Elevation
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+03 Components
+├── Actions
+├── Forms
+├── Data Display
+├── Feedback
+├── Navigation
+└── Overlays
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+04 CMS Patterns
+└── Hero Banner
