@@ -1,0 +1,29 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="02 Foundations/Design Tokens" />
+
+# Design Tokens
+
+Design tokens are named design decisions used consistently across components.
+
+They create a shared vocabulary between design and code.
+
+## Token categories
+
+| Category | Example |
+|---|---|
+| Color | `color.brand.primary` |
+| Typography | `font.size.body.md` |
+| Spacing | `space.4` |
+| Radius | `radius.md` |
+| Elevation | `shadow.md` |
+
+## Why tokens matter
+
+Instead of hard-coding the same value in many components, a token gives that decision a reusable semantic name.
+
+Example:
+
+`#555AB9` → `color.brand.primary`
+
+If the brand color changes, the token can be updated centrally and consumed consistently across components.

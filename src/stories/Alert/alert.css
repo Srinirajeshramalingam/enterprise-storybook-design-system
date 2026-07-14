@@ -1,0 +1,8 @@
+.ds-alert { width: min(100%, 520px); box-sizing: border-box; display: flex; justify-content: space-between; gap: 16px; border: 1px solid; border-radius: 12px; padding: 16px; font-family: 'Nunito Sans','Helvetica Neue',Arial,sans-serif; }
+.ds-alert__title { font-weight: 800; }
+.ds-alert__message { margin-top: 4px; font-size: 14px; line-height: 1.5; }
+.ds-alert__dismiss { border: 0; background: transparent; font-size: 22px; line-height: 1; cursor: pointer; color: inherit; }
+.ds-alert--info { background: #eef2ff; border-color: #c7d2fe; color: #3730a3; }
+.ds-alert--success { background: #f0fdf4; border-color: #bbf7d0; color: #166534; }
+.ds-alert--warning { background: #fffbeb; border-color: #fde68a; color: #92400e; }
+.ds-alert--danger { background: #fef2f2; border-color: #fecaca; color: #991b1b; }

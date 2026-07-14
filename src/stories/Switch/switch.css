@@ -1,0 +1,9 @@
+.ds-switch { display: inline-flex; align-items: center; gap: 10px; cursor: pointer; font-family: 'Nunito Sans','Helvetica Neue',Arial,sans-serif; color: #1f2937; }
+.ds-switch__input { position: absolute; opacity: 0; pointer-events: none; }
+.ds-switch__track { position: relative; width: 42px; height: 24px; border-radius: 999px; background: #cbd5e1; transition: .2s; }
+.ds-switch__thumb { position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.25); transition: .2s; }
+.ds-switch__input:checked + .ds-switch__track { background: #555ab9; }
+.ds-switch__input:checked + .ds-switch__track .ds-switch__thumb { transform: translateX(18px); }
+.ds-switch__input:focus-visible + .ds-switch__track { outline: 3px solid rgba(85,90,185,.25); }
+.ds-switch__label { font-size: 14px; font-weight: 700; }
+.ds-switch--disabled { cursor: not-allowed; opacity: .55; }

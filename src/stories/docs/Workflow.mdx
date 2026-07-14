@@ -1,0 +1,48 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="01 Introduction/Figma → Storybook → AEM" />
+
+# Figma → Storybook → AEM
+
+The design-to-development pipeline maps one governed component model across design, code, and content authoring.
+
+## 1. Figma
+
+Figma defines:
+
+- Component anatomy
+- Variants and states
+- Design tokens
+- Responsive behaviour
+- Content guidance
+- Interaction intent
+
+## 2. Storybook
+
+Storybook validates the coded implementation through:
+
+- Stories for key variants and states
+- Interactive controls
+- Event actions
+- Accessibility review
+- Responsive inspection
+- Living documentation
+
+## 3. CMS / AEM
+
+The production component maps approved UI behaviour to authorable fields.
+
+Example: **Hero Banner**
+
+| Figma property | Storybook prop / arg | CMS / AEM field |
+|---|---|---|
+| Eyebrow | `eyebrow` | Eyebrow text |
+| Heading | `title` | Heading |
+| Description | `description` | Rich text / description |
+| Primary CTA | `primaryCtaLabel` | CTA label + link |
+| Alignment | `alignment` | Author selection |
+| Image | `imageUrl` | DAM asset |
+
+## Governance rule
+
+Content authors can change approved content fields, while the component preserves layout, tokens, responsive behaviour, and accessibility rules.

@@ -1,0 +1,8 @@
+.ds-field { display: grid; gap: 8px; width: min(100%, 360px); font-family: 'Nunito Sans','Helvetica Neue',Arial,sans-serif; color: #1f2937; }
+.ds-field__label { font-size: 14px; font-weight: 700; }
+.ds-field__required, .ds-field__error { color: #b42318; }
+.ds-field__helper, .ds-field__error { font-size: 12px; }
+.ds-input { width: 100%; box-sizing: border-box; border: 1px solid #cbd5e1; border-radius: 10px; padding: 11px 12px; font: inherit; background: #fff; color: #111827; }
+.ds-input:focus { outline: 3px solid rgba(85,90,185,.18); border-color: #555ab9; }
+.ds-input--error { border-color: #b42318; }
+.ds-input:disabled { cursor: not-allowed; background: #f1f5f9; color: #94a3b8; }

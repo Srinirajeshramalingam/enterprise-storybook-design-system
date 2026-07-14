@@ -1,0 +1,36 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="01 Introduction/Design Principles" />
+
+# Design Principles
+
+The system is guided by five principles.
+
+## 1. Consistency
+
+Common interaction patterns, visual language, and component behaviour should remain predictable across products and CMS experiences.
+
+## 2. Accessibility
+
+Components should support keyboard interaction, visible focus, meaningful labels, semantic HTML, and accessible states.
+
+## 3. Scalability
+
+Components should support variants and content flexibility without creating unnecessary duplication.
+
+## 4. Reusability
+
+A component should solve a repeatable product or content-authoring need rather than a one-off screen requirement.
+
+## 5. Governance
+
+Changes to shared components should be documented, reviewed, tested, and communicated before release.
+
+## Decision rule
+
+When a new UI request appears, first ask:
+
+1. Does an existing component already solve the problem?
+2. Can an existing component support the requirement through a controlled variant?
+3. Is the requirement reusable across products or CMS templates?
+4. Does the new behaviour preserve accessibility and consistency?

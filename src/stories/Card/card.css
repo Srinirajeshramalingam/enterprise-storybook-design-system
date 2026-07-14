@@ -1,0 +1,8 @@
+.ds-card { width: min(100%, 360px); overflow: hidden; border: 1px solid #e2e8f0; border-radius: 16px; background: #fff; font-family: 'Nunito Sans','Helvetica Neue',Arial,sans-serif; color: #111827; }
+.ds-card--elevated { box-shadow: 0 14px 35px rgba(15,23,42,.12); border-color: transparent; }
+.ds-card__image { width: 100%; height: 180px; object-fit: cover; display: block; }
+.ds-card__body { padding: 20px; }
+.ds-card__eyebrow { color: #555ab9; font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.ds-card__title { margin: 8px 0 0; font-size: 22px; line-height: 1.2; }
+.ds-card__description { margin: 10px 0 18px; color: #64748b; line-height: 1.55; }
+.ds-card__action { border: 0; background: none; color: #555ab9; padding: 0; font: inherit; font-weight: 800; cursor: pointer; }

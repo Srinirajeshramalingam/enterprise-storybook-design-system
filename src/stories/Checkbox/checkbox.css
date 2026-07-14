@@ -1,0 +1,5 @@
+.ds-check { display: inline-flex; align-items: flex-start; gap: 10px; font-family: 'Nunito Sans','Helvetica Neue',Arial,sans-serif; color: #1f2937; cursor: pointer; }
+.ds-check input { width: 18px; height: 18px; margin-top: 2px; accent-color: #555ab9; }
+.ds-check__label { display: block; font-weight: 700; font-size: 14px; }
+.ds-check__description { display: block; margin-top: 2px; color: #64748b; font-size: 12px; }
+.ds-check--disabled { cursor: not-allowed; opacity: .55; }
